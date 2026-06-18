@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
-<head>
-<meta charset="UTF-8">
+<!-- saved from url=(0039)file:///Users/cr/Downloads/index_1.html -->
+<html lang="de"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Voice Pilot</title>
 <style>
@@ -90,7 +90,7 @@ audio { width: 100%; margin-top: 0.75rem; border-radius: 8px; }
     <div style="font-size:32px; margin-bottom:1rem">🔒</div>
     <h1 style="text-align:center; margin-bottom:0.5rem">Voice Pilot</h1>
     <p style="font-size:14px; color:#777; margin-bottom:1.5rem">Bitte Passwort eingeben</p>
-    <input type="password" id="pw-input" placeholder="••••••" onkeydown="if(event.key==='Enter')checkPW()">
+    <input type="password" id="pw-input" placeholder="••••••" onkeydown="if(event.key===&#39;Enter&#39;)checkPW()">
     <button class="btn btn-dark" onclick="checkPW()">Weiter</button>
     <p class="pw-error" id="pw-err">Falsches Passwort</p>
   </div>
@@ -122,7 +122,7 @@ audio { width: 100%; margin-top: 0.75rem; border-radius: 8px; }
     </div>
   </div>
 
-  <button class="btn btn-dark" id="consent-btn" disabled onclick="go('s-name')">Ich bin dabei</button>
+  <button class="btn btn-dark" id="consent-btn" disabled="" onclick="go(&#39;s-name&#39;)">Ich bin dabei</button>
   <p class="disclaimer">Das ist kein medizinisches Produkt und kein wissenschaftliches Experiment.</p>
 </div>
 
@@ -131,11 +131,9 @@ audio { width: 100%; margin-top: 0.75rem; border-radius: 8px; }
   <h1>Wie heisst du?</h1>
   <p class="sub">Nur damit ich die Dateien zuordnen kann.</p>
   <div class="card">
-    <input type="text" id="name-in" placeholder="Vorname" autocomplete="given-name"
-      style="width:100%;font-size:16px;padding:8px 0;border:none;border-bottom:1.5px solid #e0e0de;background:transparent;outline:none;color:#1a1a1a"
-      oninput="document.getElementById('name-btn').disabled=this.value.trim().length<2">
+    <input type="text" id="name-in" placeholder="Vorname" autocomplete="given-name" style="width:100%;font-size:16px;padding:8px 0;border:none;border-bottom:1.5px solid #e0e0de;background:transparent;outline:none;color:#1a1a1a" oninput="document.getElementById(&#39;name-btn&#39;).disabled=this.value.trim().length&lt;2">
   </div>
-  <button class="btn btn-dark" id="name-btn" disabled onclick="saveName()">Los geht's</button>
+  <button class="btn btn-dark" id="name-btn" disabled="" onclick="saveName()">Los geht's</button>
 </div>
 
 <!-- CHECKIN -->
@@ -149,31 +147,31 @@ audio { width: 100%; margin-top: 0.75rem; border-radius: 8px; }
     <p class="section-label">Schlaf</p>
     <div class="q-label">Schlafqualitat letzte Nacht <span class="hint">1 schlecht — 5 gut</span></div>
     <div class="scale-row" id="q1">
-      <button class="scale-btn" onclick="sel('q1',1,this)">1</button>
-      <button class="scale-btn" onclick="sel('q1',2,this)">2</button>
-      <button class="scale-btn" onclick="sel('q1',3,this)">3</button>
-      <button class="scale-btn" onclick="sel('q1',4,this)">4</button>
-      <button class="scale-btn" onclick="sel('q1',5,this)">5</button>
+      <button class="scale-btn" onclick="sel(&#39;q1&#39;,1,this)">1</button>
+      <button class="scale-btn" onclick="sel(&#39;q1&#39;,2,this)">2</button>
+      <button class="scale-btn" onclick="sel(&#39;q1&#39;,3,this)">3</button>
+      <button class="scale-btn" onclick="sel(&#39;q1&#39;,4,this)">4</button>
+      <button class="scale-btn" onclick="sel(&#39;q1&#39;,5,this)">5</button>
     </div>
   </div>
 
   <div class="card">
-    <p class="section-label">Energie & Stimmung</p>
+    <p class="section-label">Energie &amp; Stimmung</p>
     <div class="q-label">Energie jetzt <span class="hint">1 erschopft — 5 fit</span></div>
     <div class="scale-row" id="q2">
-      <button class="scale-btn" onclick="sel('q2',1,this)">1</button>
-      <button class="scale-btn" onclick="sel('q2',2,this)">2</button>
-      <button class="scale-btn" onclick="sel('q2',3,this)">3</button>
-      <button class="scale-btn" onclick="sel('q2',4,this)">4</button>
-      <button class="scale-btn" onclick="sel('q2',5,this)">5</button>
+      <button class="scale-btn" onclick="sel(&#39;q2&#39;,1,this)">1</button>
+      <button class="scale-btn" onclick="sel(&#39;q2&#39;,2,this)">2</button>
+      <button class="scale-btn" onclick="sel(&#39;q2&#39;,3,this)">3</button>
+      <button class="scale-btn" onclick="sel(&#39;q2&#39;,4,this)">4</button>
+      <button class="scale-btn" onclick="sel(&#39;q2&#39;,5,this)">5</button>
     </div>
     <div class="q-label">Stimmung jetzt <span class="hint">1 schlecht — 5 gut</span></div>
     <div class="scale-row" id="q3">
-      <button class="scale-btn" onclick="sel('q3',1,this)">1</button>
-      <button class="scale-btn" onclick="sel('q3',2,this)">2</button>
-      <button class="scale-btn" onclick="sel('q3',3,this)">3</button>
-      <button class="scale-btn" onclick="sel('q3',4,this)">4</button>
-      <button class="scale-btn" onclick="sel('q3',5,this)">5</button>
+      <button class="scale-btn" onclick="sel(&#39;q3&#39;,1,this)">1</button>
+      <button class="scale-btn" onclick="sel(&#39;q3&#39;,2,this)">2</button>
+      <button class="scale-btn" onclick="sel(&#39;q3&#39;,3,this)">3</button>
+      <button class="scale-btn" onclick="sel(&#39;q3&#39;,4,this)">4</button>
+      <button class="scale-btn" onclick="sel(&#39;q3&#39;,5,this)">5</button>
     </div>
   </div>
 
@@ -181,9 +179,9 @@ audio { width: 100%; margin-top: 0.75rem; border-radius: 8px; }
     <p class="section-label">Vasomotorisch</p>
     <div class="q-label">Hitzewallungen / Nachtschweis gestern?</div>
     <div class="yn-row" id="q4">
-      <button class="yn-btn" onclick="selYN('q4','Nein',this)">Nein</button>
-      <button class="yn-btn" onclick="selYN('q4','Ja, leicht',this)">Ja, leicht</button>
-      <button class="yn-btn" onclick="selYN('q4','Ja, stark',this)">Ja, stark</button>
+      <button class="yn-btn" onclick="selYN(&#39;q4&#39;,&#39;Nein&#39;,this)">Nein</button>
+      <button class="yn-btn" onclick="selYN(&#39;q4&#39;,&#39;Ja, leicht&#39;,this)">Ja, leicht</button>
+      <button class="yn-btn" onclick="selYN(&#39;q4&#39;,&#39;Ja, stark&#39;,this)">Ja, stark</button>
     </div>
   </div>
 
@@ -191,15 +189,15 @@ audio { width: 100%; margin-top: 0.75rem; border-radius: 8px; }
     <p class="section-label">Allgemein</p>
     <div class="q-label">Wie geht es dir insgesamt? <span class="hint">1 schlecht — 5 gut</span></div>
     <div class="scale-row" id="q5">
-      <button class="scale-btn" onclick="sel('q5',1,this)">1</button>
-      <button class="scale-btn" onclick="sel('q5',2,this)">2</button>
-      <button class="scale-btn" onclick="sel('q5',3,this)">3</button>
-      <button class="scale-btn" onclick="sel('q5',4,this)">4</button>
-      <button class="scale-btn" onclick="sel('q5',5,this)">5</button>
+      <button class="scale-btn" onclick="sel(&#39;q5&#39;,1,this)">1</button>
+      <button class="scale-btn" onclick="sel(&#39;q5&#39;,2,this)">2</button>
+      <button class="scale-btn" onclick="sel(&#39;q5&#39;,3,this)">3</button>
+      <button class="scale-btn" onclick="sel(&#39;q5&#39;,4,this)">4</button>
+      <button class="scale-btn" onclick="sel(&#39;q5&#39;,5,this)">5</button>
     </div>
   </div>
 
-  <button class="btn btn-dark" id="ci-btn" disabled onclick="go('s-voice')">Weiter zur Sprachaufnahme</button>
+  <button class="btn btn-dark" id="ci-btn" disabled="" onclick="go(&#39;s-voice&#39;)">Weiter zur Sprachaufnahme</button>
 </div>
 
 <!-- VOICE -->
@@ -210,7 +208,7 @@ audio { width: 100%; margin-top: 0.75rem; border-radius: 8px; }
 
   <div class="prompt-box">
     <p class="prompt-lbl">Text laut vorlesen</p>
-    <p class="prompt-txt">"Heute Morgen wache ich auf und denke an den Tag, der vor mir liegt. Es ist ruhig draussen."</p>
+    <p class="prompt-txt">"Die Sonne scheint hell über den blauen Bergen. Ich fühle mich gut."</p>
   </div>
   <div class="prompt-box">
     <p class="prompt-lbl">Dann frei sprechen (~20 Sek.)</p>
@@ -219,14 +217,14 @@ audio { width: 100%; margin-top: 0.75rem; border-radius: 8px; }
 
   <div class="voice-box">
     <div class="timer" id="timer">0:00</div>
-    <div class="waveform" id="wf"></div>
+    <div class="waveform" id="wf"><div class="bar" style="height: 5px;"></div><div class="bar" style="height: 5px;"></div><div class="bar" style="height: 5px;"></div><div class="bar" style="height: 5px;"></div><div class="bar" style="height: 5px;"></div><div class="bar" style="height: 5px;"></div><div class="bar" style="height: 5px;"></div><div class="bar" style="height: 5px;"></div><div class="bar" style="height: 5px;"></div><div class="bar" style="height: 5px;"></div><div class="bar" style="height: 5px;"></div><div class="bar" style="height: 5px;"></div><div class="bar" style="height: 5px;"></div><div class="bar" style="height: 5px;"></div><div class="bar" style="height: 5px;"></div><div class="bar" style="height: 5px;"></div><div class="bar" style="height: 5px;"></div><div class="bar" style="height: 5px;"></div><div class="bar" style="height: 5px;"></div><div class="bar" style="height: 5px;"></div><div class="bar" style="height: 5px;"></div><div class="bar" style="height: 5px;"></div></div>
     <button class="rec-btn rec-idle" id="rec-btn" onclick="toggleRec()">🎙️</button>
     <p class="rec-status" id="rec-st">Auf den Kreis tippen um zu starten</p>
     <audio id="playback" style="display:none"></audio>
   </div>
 
-  <button class="btn btn-dark" id="voice-btn" disabled onclick="go('s-done')">Fertig fur heute ✓</button>
-  <button class="btn btn-outline" onclick="go('s-done')">Uberspringen (heute)</button>
+  <button class="btn btn-dark" id="voice-btn" disabled="" onclick="go(&#39;s-done&#39;)">Fertig fur heute ✓</button>
+  <button class="btn btn-outline" onclick="go(&#39;s-done&#39;)">Uberspringen (heute)</button>
 </div>
 
 <!-- DONE -->
@@ -382,5 +380,6 @@ function nextDay(){
 
 if(name) document.getElementById('name-in').value=name;
 </script>
-</body>
-</html>
+
+
+</body></html>
